@@ -1,0 +1,15 @@
+p {
+    color: red;
+}
+
+.box1 {
+    border: green 1px dotted;
+}
+
+#box2 {
+    border: black 2px solid;
+}
+
+* {
+    color: blue;
+}
