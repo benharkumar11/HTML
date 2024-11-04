@@ -1,96 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Ben</title>
-    <link  
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
-        el="stylesheet"
-    />
-    <link rel="stylesheet" href="style1.css">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>Benhar Kumar</h1>
-            <p>Full Stack Developer</p>
-        </header>
-        <div class="content">
-            <!--Left column-->
-            <div class="left-column">
-                <section class="contact">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>+1 513-302-5059</li>
-                        <li>Ben@email.com</li>
-                        <li>Ohio, Cincinnati</li>
-                        <li>www.ben.com</li>
-                    </ul>
-                </section>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                <section class="education">
-                    <h2>Education</h2>
-                    <p>
-                        <strong>2017 - 2021</strong> <br />
-                        Bachelors in Electronics and Communication <br />
-                        Anits college
-                    </p>
-                </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
 
-                <section class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>Web development</li>
-                        <li>project management</li>
-                        <li>Digital Marketing</li>
-                        <li>Data Analysis</li>
-                    </ul>
-                </section>
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
 
-                <section class="languages">
-                    <h2>Language</h2>
-                    <ul>
-                        <li>English</li>
-                        <li>Telugu</li>
-                    </ul>
-                </section>
-            </div>
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
 
-            <!--Right Column-->
-            <div class="right-column">
-                <section class="profile-summary">
-                    <h2>Profile Summary</h2>
-                    <p>
-                        Full Stack Developer with a passion for creating dynamic and
-                        responsive web applications. Proficient in both front-end and
-                        back-end technologies including JavaScript, React, Node.js,
-                        Express, and MongoDB. Adept at building scalable, efficient, and
-                        user-friendly solutions.
-                    </p>
-                </section>
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003366;
+}
 
-                <section class="work-experience">
-                    <h2>Work Experience</h2>
-                    <div class="job">
-                        <h3>Web developer</h3>
-                        <p><strong>2020 - 2022</strong></p>
-                        <p>Accenture</p>
-                        <ul>
-                            <li>
-                                Developed and executed digital marketing strategies leading to
-                                a 15% growth in organic website traffic.
-                            </li>
-                            <li>
-                                Collaborated with the content team to create SEO-optimized
-                                content, increasing search engine rankings.
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    
-</body>
-</html>
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-column {
+    width: 30%;
+}
+
+.contact,
+.education,
+.skills,
+.languages {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Right Column */
+.right-column {
+    width: 65%;
+}
+
+.profile-summary p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.work-experience .job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+.job p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.job ul {
+    margin-top: 10px;
+}
+
+.job ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 8px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #003366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #002244;
+}
